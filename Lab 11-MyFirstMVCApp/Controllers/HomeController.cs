@@ -13,7 +13,6 @@ namespace Lab11MyFirstMVCApp.Controllers
         public ViewResult Index()
         {
             return View();
-
         }
 
         [HttpPost]
