@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Lab_11_MyFirstMVCApp
+namespace Lab11MyFirstMVCApp
 {
     public class Program
     {
