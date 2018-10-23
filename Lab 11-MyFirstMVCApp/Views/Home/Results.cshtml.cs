@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Lab 11-MyFirstMVCApp.Views.Home
+namespace Lab11MyFirstMVCApp.Views.Home
 {
     public class ResultsModel : PageModel
     {
