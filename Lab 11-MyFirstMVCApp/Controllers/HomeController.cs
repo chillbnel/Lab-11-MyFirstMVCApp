@@ -19,8 +19,12 @@ namespace Lab11MyFirstMVCApp.Controllers
         [HttpPost]
         public IActionResult Index(int firstYear, int lastYear)
         {
-            return RedirectToAction("Results", new { firstYear, lastYear });
+            return RedirectToAction("Result", new { firstYear, lastYear });
+        }
 
+        public ViewResult Result(int firstYear, int lastYear)
+        {
+            return View(PersonOfTheYear.GetPersons(firstYear, lastYear));
         }
     }
 }
