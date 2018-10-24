@@ -21,13 +21,13 @@ namespace Lab11MyFirstMVCApp.Models
         public static List<PersonOfTheYear> GetPersons(int begYear, int endYear)
         {
             List<PersonOfTheYear> people = new List<PersonOfTheYear>(); //instantiates a new list, people, that holds PersonOfTheYear properties
-            string path = Environment.CurrentDirectory;
-            string newPath = Path.GetFullPath(Path.Combine(path, @"wwwroot\personOfTheYear.csv"));
-            string[] myFile = File.ReadAllLines(newPath);
+            string path = Environment.CurrentDirectory; //aboslute file path to directory
+            string newPath = Path.GetFullPath(Path.Combine(path, @"wwwroot\personOfTheYear.csv"));//path to the cvs file, combines with absolute path
+            string[] myFile = File.ReadAllLines(newPath); //stores all lines in the file into an array as strings
 
             for (int i = 1; i < myFile.Length; i++) //iterates through each person
             {
-                string[] fields = myFile[i].Split(',');
+                string[] fields = myFile[i].Split(',');//parses lines into fields, stores into an array
                 people.Add(new PersonOfTheYear //add a new person to the list with person of the year attributes
                 {
                     Year = Convert.ToInt32(fields[0]),
@@ -42,8 +42,8 @@ namespace Lab11MyFirstMVCApp.Models
                 });
             }
 
-            List<PersonOfTheYear> listofPeople = people.Where(p => (p.Year >= begYear) && (p.Year <= endYear)).ToList();
-            return listofPeople;//returns the list
+            List<PersonOfTheYear> listofPeople = people.Where(p => (p.Year >= begYear) && (p.Year <= endYear)).ToList();//creates list of based off search query
+            return listofPeople;//returns the filtered list
         }
     }
 }

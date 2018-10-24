@@ -1,2 +1,39 @@
 ﻿body {
 }
+
+#table {
+    position: relative;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    text-align: center;
+    background-color: #ccc;
+}
+
+td, th, tr {
+    border: 1px solid white;
+    padding: 9px;
+}
+
+    tr:hover {
+        background-color: firebrick;
+        transition: 0.4s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 1.1em;
+    }
+
+#tableHeader {
+    font-weight: bold;
+}
+
+#formSearch {
+    background-color: gray;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#header {
+    text-align: center;
+    background-color: gray;
+    font-family: 'Monoton', cursive;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}

@@ -1,10 +1,15 @@
 ﻿@model List<Lab11MyFirstMVCApp.Models.PersonOfTheYear>
-    <head>
-        <link herf="StyleSheet.css" />
-    </head>
-    <body>
-        <table>
-            <tr>
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/StyleSheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 id="header">Time People of the Year</h1>
+        <table id="table">
+            <tr id="tableHeader">
                 <th>Year</th>
                 <th>Honor</th>
                 <th>Name</th>
@@ -30,4 +35,6 @@
                 </tr>
             }
         </table>
-     </body>
+    </main>
+</body>
+</html>
