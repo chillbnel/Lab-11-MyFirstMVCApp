@@ -1,14 +1,20 @@
-﻿<head>
-    <link herf="StyleSheet.css" />
+﻿<html>
+<head>
+    <link rel="stylesheet" href="~/StyleSheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 </head>
 <body>
-    <form method="post">
-        <label for="firstYear">First Year</label>
-        <input placeholder="first year" name="firstYear" />
+    <h1 id="header">Time Person of the Year</h1>
+    <form method="post" id="formSearch">
+        <div class="input">
+            <label for="firstYear">First Year</label>
+            <input placeholder="first year" name="firstYear" />
 
-        <label for="lastYear">Last Year</label>
-        <input placeholder="last year" name="lastYear" />
+            <label for="lastYear">Last Year</label>
+            <input placeholder="last year" name="lastYear" />
 
-        <button type="submit">Results</button>
+            <button type="submit">Results</button>
+        </div>
     </form>
 </body>
+</html>
